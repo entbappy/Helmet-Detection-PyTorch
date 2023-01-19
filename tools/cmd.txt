@@ -1,0 +1,2 @@
+coco convertion cmd:
+python voc2coco.py annotations output.json

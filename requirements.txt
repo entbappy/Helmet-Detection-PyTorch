@@ -1,0 +1,25 @@
+numpy
+notebook
+pandas
+matplotlib
+opencv-python
+albumentations
+ipykernel
+tqdm
+pycocotools   #Comment when creating Docker Image
+cython
+from-root
+boto3
+mypy-boto3-s3
+Pillow
+torch-summary
+fastapi
+uvicorn
+Jinja2
+python-multipart
+PyYAML
+dill==0.3.5.1
+utils
+torch>=1.7.0  # see https://pytorch.org/get-started/locally/ (recommended)
+torchvision>=0.8.1
+-e .
