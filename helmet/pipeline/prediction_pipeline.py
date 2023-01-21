@@ -33,6 +33,7 @@ class PredictionPipeline:
         except Exception as e:
             raise HelmetException(e, sys) from e
 
+    
     def get_model_from_s3(self) -> str:
         """
         Method Name :   predict
@@ -52,6 +53,8 @@ class PredictionPipeline:
         except Exception as e:
             raise HelmetException(e, sys) from e
 
+
+    
     def prediction(self, best_model_path: str, image_tensor, image_int_tensor) -> float:
         logging.info("Entered the prediction method of PredictionPipeline class")
         try:
@@ -78,6 +81,9 @@ class PredictionPipeline:
         except Exception as e:
             raise HelmetException(e, sys) from e
 
+
+    
+    
     def run_pipeline(self, data):
         logging.info("Entered the run_pipeline method of PredictionPipeline class")
         try:
@@ -90,4 +96,3 @@ class PredictionPipeline:
             return detected_image
         except Exception as e:
             raise HelmetException(e, sys) from e
-
